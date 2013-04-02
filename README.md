@@ -5,7 +5,7 @@ following command line commands:
 	sudo apt-get update
 	sudo apt-get install git
 	git init
-	git clone git@github.com:Slater-Victoroff/JuliansXKCDAlgorithm.git
+	git clone https://github.com/Slater-Victoroff/JuliansXKCDAlgorithm.git
 	sudo apt-get install python3 python3-dev
 
 3. Download pyskein from http://pythonhosted.org/pyskein/download.html (download the .tar file)
@@ -22,3 +22,14 @@ python3 algorithm.py
 7. If anything prints out after that upload it to http://almamater.xkcd.com/
 Use the email olin.edu
 then run it again on a lower number.
+
+~~~~~~~If you want things to be a little easier~~~~~~~~~~~
+
+after 4:
+5. Go to https://pypi.python.org/pypi/requests and hit the big download button
+6. Go to download directory and run:
+	tar -xvzf requests-1.2.0.tar.gz
+	cd requests-1.2.0.tar.gz
+	python3 setup.py install
+Then follow 5. and 6. from the instructions above and if there's a solution your computer
+finds it will automatically be uploaded to xkcd's site and you can just let it run.
