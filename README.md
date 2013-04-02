@@ -20,4 +20,5 @@ type:
 python3 algorithm.py
 
 7. If anything prints out after that upload it to http://almamater.xkcd.com/
+Use the email olin.edu
 then run it again on a lower number.
