@@ -1,35 +1,44 @@
 Steps for running:
-1. check http://almamater.xkcd.com/best.csv for olin's current score.
-2. go to some empty directory that you want this to run in and run the 
-following command line commands:
-	sudo apt-get update
-	sudo apt-get install git
-	git init
-	git clone https://github.com/Slater-Victoroff/JuliansXKCDAlgorithm.git
-	sudo apt-get install python3 python3-dev
 
-3. Download pyskein from http://pythonhosted.org/pyskein/download.html (download the .tar file)
-4. Go to your downloads directory and run:
-	tar -xvzf pyskein-0.7.1.tar.gz
-	cd pyskein-0.7.1
-	python3 setup.py install
-5. Go back to the directory that you used git clone in
-6. Change the bestCnt value(line 19) in the algorithm.py file to the value
-that olin is currently at. Save.
-type:
+# Setup
+
+Linux: 
+
+```
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get install python3 python3-dev
+```
+
+OS X:
+
+```
+brew install python3
+```
+
+Then install the algorithm in your folder of choice:
+
+```
+git clone https://github.com/Slater-Victoroff/JuliansXKCDAlgorithm.git
+cd JuliansXKCDAlgorithm
+
+wget http://pypi.python.org/packages/source/p/pyskein/pyskein-0.7.1.tar.gz
+tar -xvzf pyskein-0.7.1.tar.gz
+cd pyskein-0.7.1
+python3 setup.py install
+cd ..
+
+wget https://pypi.python.org/packages/source/r/requests/requests-1.2.0.tar.gz
+tar -xvzf requests-1.2.0.tar.gz
+cd requests-1.2.0.tar.gz
+python3 setup.py install
+cd ..
+```
+
+# Running
+
+```
 python3 algorithm.py
+```
 
-7. If anything prints out after that upload it to http://almamater.xkcd.com/
-Use the email olin.edu
-then run it again on a lower number.
-
-~~~~~~~If you want things to be a little easier~~~~~~~~~~~
-
-after 4:
-5. Go to https://pypi.python.org/pypi/requests and hit the big download button
-6. Go to download directory and run:
-	tar -xvzf requests-1.2.0.tar.gz
-	cd requests-1.2.0.tar.gz
-	python3 setup.py install
-Then follow 5. and 6. from the instructions above and if there's a solution your computer
-finds it will automatically be uploaded to xkcd's site and you can just let it run.
+If there's a solution your computer finds it will automatically be uploaded to xkcd's site and you can just let it run. If it finds an answer and prints it out, rerun the script again!
