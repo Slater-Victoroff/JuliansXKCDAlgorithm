@@ -34,7 +34,7 @@ while True:
 		if newCnt < bestCnt:
 			bestCnt = newCnt
 			requests.post("http://almamater.xkcd.com/?edu=olin.edu", {'hashable': a})
-                        log.write("NEW:\n|%s|\n%d\n\n" %(a, bestCnt))
+			log.write("NEW:\n|%s|\n%d\n\n" %(a, bestCnt))
 			print("NEW:\n"+"|"+a+"|")
 			print(bestCnt)
 			print("\n")
