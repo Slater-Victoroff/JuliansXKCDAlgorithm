@@ -41,4 +41,4 @@ cd ..
 python3 algorithm.py
 ```
 
-If there's a solution your computer finds it will automatically be uploaded to xkcd's site and you can just let it run. If it finds an answer and prints it out, rerun the script again!
+If there's a solution your computer finds it will automatically be uploaded to xkcd's site and you can just let it run. Additionally, any findings will be recorded in log.txt.
