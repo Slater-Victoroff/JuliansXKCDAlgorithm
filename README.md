@@ -14,7 +14,7 @@ following command line commands:
 	cd pyskein-0.7.1
 	python3 setup.py install
 5. Go back to the directory that you used git clone in
-6. Change the bestCnt value(line 19) in the algorithm.py file to be one less than the value
+6. Change the bestCnt value(line 19) in the algorithm.py file to the value
 that olin is currently at. Save.
 type:
 python3 algorithm.py
